@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Split Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>💰 Bill Split Calculator 💰</h1>
+
+    <form id="billForm" class="calculator-form">
+      <div class="input-group">
+        <label for="billAmount">Bill Amount ($)</label>
+        <input type="number" id="billAmount" step="0.01" placeholder="e.g., 50.00" required>
+      </div>
+
+      <div class="input-group">
+        <label for="tipPercentage">Tip Percentage (%)</label>
+        <input type="number" id="tipPercentage" step="1" placeholder="e.g., 15" required>
+      </div>
+
+      <div class="input-group">
+        <label for="numPeople">Number of People</label>
+        <input type="number" id="numPeople" min="1" placeholder="e.g., 2" required>
+      </div>
+
+      <button type="submit" class="calculate-btn">Calculate</button>
+    </form>
+
+    <div id="result" class="result-container"></div>
+    <h5>Created by Alexis Negron Lopez :)</h5>
+  </div>
+
+  <script src="bill_split_calculator.js"></script>
+</body>
+</html>
